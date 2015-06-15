@@ -42,8 +42,8 @@ class ListingsController < ApplicationController
   end
 
   private
-  def product_params
-  	params.require(:product).permit(
+  def listing_params
+  	params.require(:listing).permit(
   		:address, 
   		:city, 
   		:bedrooms, 
