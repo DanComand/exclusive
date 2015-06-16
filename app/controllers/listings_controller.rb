@@ -53,7 +53,8 @@ class ListingsController < ApplicationController
   		:bedrooms, 
   		:bathrooms, 
   		:squarefeet, 
-  		:description)
+  		:description,
+      :photos)
   end
 
 end
