@@ -1,4 +1,8 @@
 class ListingsController < ApplicationController
+
+    before_filter :ensure_logged_in, only: [:create, :destroy]
+
+    
   def index
   	@listings = Listing.all
   end
